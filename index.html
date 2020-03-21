@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-
+<!-- Add plugin to support 1 page website/long scrolling. Consider setting all widths and heights to 100% -->
 <html>
 	<head>
 		<title>&lt;/&gt;KyleahCodes</title>
+		<link rel="stylesheet" type="text/css" href="normalizeCSS.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	
 	<body>
 		<header>
+		<!-- Remove header and replace w/div -->
 			<h1>Hi, I'm Kyleah</h1>
 			<h2>Welcome to my website</h2>
+			<h3>(it needs a lot of work)</h3>
+			<nav>
+				<a href="#about">About</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#skills">Skills</a>
+				<a href="#experience">Experience</a>
+				<!--Future Eduction  section to go here -->
+				<a href="#contact">Contact</a>
+				<!--Links for social media -->
+				<a href="https://github.com/krfreder" target="_blank">
+					<img src="images/gitHubLogo.PNG" alt="GitHub logo"/>
+				</a>
+				<a href="https://www.linkedin.com/in/kyleahfrederic/" target="_blank">
+					<img src="images/linkedInLogo.PNG" alt="LinkedIn logo"/>
+				</a>
+			</nav>
 		</header>
-		<nav>
-			<a href="#about">About</a>
-			<a href="#portfolio">Portfolio</a>
-			<a href="#skills">Skills</a>
-			<a href="#experience">Experience</a>
-			<!--Future Eduction  section to go here -->
-			<a href="#contact">Contact</a>
-			<!--Links for social media -->
-			<a href="https://github.com/krfreder" target="_blank">
-				<img src="images/gitHubLogo.PNG" alt="GitHub logo"/>
-			</a>
-			<a href="https://www.linkedin.com/in/kyleahfrederic/" target="_blank">
-				<img src="images/linkedInLogo.PNG" alt="LinkedIn logo"/>
-			</a>
-		</nav>
 		<main>
 			<!--About page content -->
 			<article id="about">
 				<h1>Wanna know about me?</h1>
 				<p>I'm Kyleah Frederic and I program things. Sort of. I'm still learning and hope to never stop.</p>
 				<p>Before, I did social work and wish to work with companies who program with a purpose.</p>
-				<p>If you accidently ended up here looking for my writing, oops! Also, hooray! Now that you've learned something new about me, you'll want to go here instead: KyleahWrites Link</p>
+				<p id="writing">If you accidently ended up here looking for my writing, oops! Also, hooray! Now that you've learned something new about me, you'll want to go here instead: KyleahWrites Link</p>
 			</article>
 			<!--Portfolio page content. Will be updated with appropriate photographs and projects once I have more of those and also figure out that odd thing with Snippet-->
 			<article id="portfolio">
@@ -66,6 +70,7 @@
 						<li>Volunteer Associate</li>
 					</ul>
 			</article>
+			<!-- Re-examine code to reflect what was learned in the forms chapter -->
 			<!--Email contact form that will definitely work in the future -->
 			<article id="contact">
 				<h1>Drop me a line, I'd love to chat!</h1>
@@ -75,13 +80,13 @@
 					<label for="lname">Last Name</label>
 					<input type="text" id="lname" name="lname">
 					<label for="subject">Subject</label>
-					<input type="subject" id="subject" name="subject">
+					<input type="text" id="subject" name="subject">
 					<label for="message">What'd you wanna talk about?</label>
 					<input type="text" id="message" name="message">
 				</form>
 			</article>
 		</main>
-		<footer>
+		<footer class = "footer">
 			Thank you for visiting
 		</footer>
 	</body>
